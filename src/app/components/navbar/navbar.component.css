@@ -5,16 +5,16 @@
     'menu   main    main    main    main    main    main    main';
   }
   
-
-  
   .grid-navbar{
-    grid-area:header;
-  }
-
-  .grid-toolbar{
-    grid-area:menu;
+    grid-area: menu;
   }
   
-  .grid-main{
-    grid-area:main;
+  .grid-toolbar{
+    grid-area: header;
+  }
+  
+  
+  
+  .grid-content{
+    grid-area: main;
   }

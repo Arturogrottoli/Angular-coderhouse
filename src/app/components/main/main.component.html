@@ -1,1 +1,15 @@
-<p>Aca van a ir los alumnos</p>
+<div class="container mt-5">
+    <div class="container row g-3">
+        <div *ngFor="let lista of LISTA" class="col-3">
+
+            <div class="card">
+                <div class="card-body">
+                  <h4>Alumno: {{ lista.nombre }} {{ lista.apellido }} </h4>  
+                  <h4>Cursos: {{lista.cursos}}</h4>
+                </div>
+              </div>
+            
+
+        </div>
+    </div>
+</div>

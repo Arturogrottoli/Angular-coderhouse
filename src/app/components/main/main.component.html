@@ -4,7 +4,7 @@
 
             <div class="card">
                 <div class="card-body">
-                  <h4>Alumno: {{ lista.nombre }} {{ lista.apellido }} </h4>  
+                  <h4>Alumno: {{ lista.nombre | titlecase }} {{ lista.apellido | titlecase  }} </h4>  
                   <h4>Cursos: {{lista.cursos}}</h4>
                 </div>
               </div>

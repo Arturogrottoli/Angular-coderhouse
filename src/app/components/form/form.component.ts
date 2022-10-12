@@ -26,8 +26,14 @@ export class FormComponent implements OnInit {
   }
 
   submitForm():void{
-    console.log(this.formulario.value);
-    this.addAlumno.emit(this.formulario.value);
+    
+    if(this.formulario.valid){
+      console.log(this.formulario.value);
+      this.addAlumno.emit(this.formulario.value);
+      this.formulario.reset();
+    } else {
+      this.formulario.markAllAsTouched();
+    }
   }
 
 

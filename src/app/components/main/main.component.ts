@@ -8,6 +8,8 @@ import { Lista } from 'src/app/models/lista';
 })
 export class MainComponent implements OnInit {
 
+  alumnos: any[] = []; 
+
   public LISTA: Array<Lista> = [
     {
     id: 1,
@@ -38,6 +40,10 @@ export class MainComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  agregarAlumno($event: any): void{
+    this.alumnos.push($event)
   }
 
 }
